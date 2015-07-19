@@ -1,0 +1,6 @@
+
+//usar los signos menor que para decir que es tarea
+task hello <<{
+
+	println 'Hello world!'
+}
