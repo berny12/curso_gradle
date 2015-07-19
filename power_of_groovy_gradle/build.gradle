@@ -1,0 +1,13 @@
+
+//El poder de groovy y gradle convirtiendo a matusculas desde gradle
+task upper << {
+    String someString = 'mY_nAmE'
+    println "Original: " + someString 
+    println "Upper case: " + someString.toUpperCase()
+}
+
+//ciclos en gradle y groovy
+task count << {
+    4.times { print "$it " }
+}
+
