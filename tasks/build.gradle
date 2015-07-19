@@ -1,3 +1,4 @@
+//DEPENDENCIA DE TAREAS
 //definir una tarea que depende de otra tarea definida
 task hello << {
     println 'Hello world!'
@@ -15,3 +16,4 @@ task taskX(dependsOn: 'taskY') << {
 task taskY << {
     println 'taskY'
 }
+
