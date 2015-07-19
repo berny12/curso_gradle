@@ -1,0 +1,17 @@
+//definir una tarea que depende de otra tarea definida
+task hello << {
+    println 'Hello world!'
+}
+//intro depende de hello
+task intro(dependsOn: hello) << {
+    println "I'm Gradle"
+}
+
+//definir una tarea que depende de una tarea que todavía no existe
+//solo cambia el orden de generar las tareas
+task taskX(dependsOn: 'taskY') << {
+    println 'taskX'
+}
+task taskY << {
+    println 'taskY'
+}
